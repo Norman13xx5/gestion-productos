@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+  background: #e9ecef;
+  min-height: 100vh;
+}
+
+.main-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 32px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.full-width-table {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .main-card {
+    padding: 12px 4px;
+  }
+  .filters {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
